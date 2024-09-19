@@ -7,5 +7,8 @@
         "plugin:@typescript-eslint/recommended",
         "prettier"
     ],
+    "rules": {
+        "@next/next/no-duplicate-head": "off"
+    },
     "plugins": ["react", "@typescript-eslint"]
 }
