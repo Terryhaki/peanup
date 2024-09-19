@@ -1,10 +1,10 @@
-import { Mutation, ObjectType, Query } from 'type-graphql';
-import { resolvers } from '@/app/api/core/_base';
+import { ObjectType, Query } from 'type-graphql';
+import { vEnv } from '@/app/api/config/env';
 
 @ObjectType()
 export class Base {
     @Query(() => String)
     version(): string {
-        return resolvers.version();
+        return vEnv.NODE_ENV;
     }
 }

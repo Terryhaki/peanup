@@ -1,7 +1,7 @@
 import { optional, number, string, object, parse, unknown, pipe, transform } from 'valibot';
 
 const envSchema = object({
-    ENV: optional(string(), 'dev'),
+    NODE_ENV: string(),
     DATABASE: string(),
     HOST: string(),
     USER: string(),
